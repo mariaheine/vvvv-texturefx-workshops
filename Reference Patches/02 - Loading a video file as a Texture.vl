@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="CBtylIQ9O4gLd9Jy7CwiPE" LanguageVersion="2020.3.0.42" Version="0.128">
+  <NugetDependency Id="VLrS5b9A48uMpaIWbXwjR8" Location="VL.CoreLib" Version="2020.3.0-0042-g1a9a5c158d" />
+  <Patch Id="EtDb3Wf9WacOQukBcZ6uXN">
+    <Canvas Id="HyYi1YsbrBzNym89FzdCpB" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="Dyc3fPKHeIeM3DTNh3DnGd">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="TGx2vs2BUFmQZ5dnLrlZGG">
+        <Canvas Id="IPQOBwXvkGLP0R4uddQhpk" CanvasType="Group">
+          <Node Bounds="481,516,185,19" Id="J61ixKKAWFWNCLq5jsRyiD">
+            <p:NodeReference LastCategoryFullName="Stride.Windowing" LastSymbolSource="VL.Stride.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="RenderWindow" />
+            </p:NodeReference>
+            <Pin Id="C3ZVCX5VLxzNqkq5yyVKCi" Name="Bounds" Kind="InputPin" DefaultValue="1026, 207, 864, 599">
+              <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Rectangle" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="OCEhwLtNGflOJ0iSS7WOhA" Name="Input" Kind="InputPin" />
+            <Pin Id="SXfQwJ3Oxr8OiwfdKGkuWE" Name="Render View" Kind="InputPin" />
+            <Pin Id="UiqdSw2uOyANqfVplejSyh" Name="Title" Kind="InputPin" />
+            <Pin Id="AEy4rjlNFH6N95uhrB4DUU" Name="Clear Color" Kind="InputPin" />
+            <Pin Id="Qyp1sYMzUFZL5LKrkSqrQJ" Name="Clear" Kind="InputPin" />
+            <Pin Id="MoCJn2uEb8WMaXNUGhES1x" Name="Edit Mode" Kind="InputPin" />
+            <Pin Id="OMWrQUgZ6I0NZACW2IXBx9" Name="Enable Keyboard Shortcuts" Kind="InputPin" />
+            <Pin Id="P9U1N7HTweTQJSeTuck3SR" Name="Enabled" Kind="InputPin" />
+            <Pin Id="GcRGjXdd2G4NIyAKzu0pak" Name="Present Interval" Kind="InputPin" />
+            <Pin Id="Nsek0sA3QyfOJn55hJJd8h" Name="Output" Kind="OutputPin" />
+            <Pin Id="LYPnsOS8ecFOn37UJsiy2c" Name="Client Bounds" Kind="OutputPin" />
+            <Pin Id="SgaGEDz6EdzNHaDw51002v" Name="Input Source" Kind="OutputPin" />
+            <Pin Id="HF0jt7OaDwqMXnMjOp2CJp" Name="Back Buffer" Kind="OutputPin" />
+            <Pin Id="J7B04oWGYoMN7xOadwlkBJ" Name="Depth Buffer" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="501,470,127,19" Id="BU2Xp2gOwk7Pyb5fhpcYKO">
+            <p:NodeReference LastCategoryFullName="Stride.Rendering" LastSymbolSource="VL.Stride.Rendering.ShaderFX.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="FullscreenQuadRenderer" />
+            </p:NodeReference>
+            <Pin Id="Ch4gytRFg1xLeKJhlzWylp" Name="Transformation" Kind="InputPin" />
+            <Pin Id="AllZi1XoldhLiMcmueC673" Name="Texture" Kind="InputPin" />
+            <Pin Id="IJGO9twxzOFOUXWgbtGx2b" Name="Color" Kind="InputPin" />
+            <Pin Id="Qweb5dPDBNoMHnOeQNmioR" Name="Blend State" Kind="InputPin" />
+            <Pin Id="KtJI0AnwBNnPTRgextPIW6" Name="Rasterizer State" Kind="InputPin" />
+            <Pin Id="Ct4wuvyykGPL39Ftm4qPPX" Name="Depth Stencil State" Kind="InputPin" />
+            <Pin Id="HjsrwUxmCmrMyZ9QgiHacc" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="VOfjK7TrYFyQExwSUW2YsP" Comment="Path" Bounds="527,304,354,15" ShowValueBox="true" isIOBox="true" Value="..\Assets\vid.mp4">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="GJCHnhtVPHXLpUWuVgti02" Bounds="-74,231,388,39" ShowValueBox="true" isIOBox="true" Value="Video file as Textrue">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Db8J6JgtZFyLTiBELnm3Ry" Bounds="-67,295,363,52" ShowValueBox="true" isIOBox="true" Value="0. Import VL.MediaFoundation package&#xD;&#xA;&#xD;&#xA;&#x9;here is a video on importing NuGet packages:">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="LIDKmz5OwywLabMdYATSu7" Bounds="-53,357,428,31" ShowValueBox="true" isIOBox="true" Value="https://www.youtube.com/watch?v=-U_kUQ3VDog&amp;feature=youtu.be">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="525,416,165,19" Id="GiSCsv9MiRMLuMk1JVlcQr">
+            <p:NodeReference LastCategoryFullName="MediaFoundation" LastSymbolSource="VL.MediaFoundation.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="MediaFoundation" />
+              <Choice Kind="ProcessAppFlag" Name="VideoPlayer" />
+            </p:NodeReference>
+            <Pin Id="GItHBTGLhJtPVC4IqGSLAb" Name="Url" Kind="InputPin" />
+            <Pin Id="QcTaWCNqoUIMGKwkjjht2z" Name="Play" Kind="InputPin" />
+            <Pin Id="KS9pNB7cSbJMBvYXV5y5ho" Name="Rate" Kind="InputPin" />
+            <Pin Id="OAhJu20cUBbNB3yBOZaZ36" Name="Seek Time" Kind="InputPin" />
+            <Pin Id="A8gG4913JE4PbtNJjOgdlN" Name="Seek" Kind="InputPin" />
+            <Pin Id="BJ3cOEQx3MRQW02h17Be37" Name="Loop Start Time" Kind="InputPin" />
+            <Pin Id="In8lroqD9SqOgMgkFSuMwL" Name="Loop End Time" Kind="InputPin" />
+            <Pin Id="VVtwT9lyNdvNTnRu67vmU3" Name="Loop" Kind="InputPin" />
+            <Pin Id="UuA2sp27HgFOejgAWU4gH5" Name="Volume" Kind="InputPin" />
+            <Pin Id="DnJfYQsrIqXNv9CB92zYeW" Name="Texture Width" Kind="InputPin" />
+            <Pin Id="EhVAk9ibF4AO0OWuDWJLUN" Name="Texture Height" Kind="InputPin" />
+            <Pin Id="NXA9AWmshQnOVrAwdhoyQC" Name="Source Bounds" Kind="InputPin" />
+            <Pin Id="Ffl0L1HXlP8LdlVoJpuOBS" Name="Border Color" Kind="InputPin" />
+            <Pin Id="Gmkesb3fXYGN1DwzZvNDPg" Name="Output" Kind="OutputPin" />
+            <Pin Id="CSto6CrzDs8QFotaAqbWeo" Name="Playing" Kind="OutputPin" />
+            <Pin Id="IwXCTzIOGb6PsUQz5NzN6t" Name="Current Time" Kind="OutputPin" />
+            <Pin Id="GSL4y0hj5zRPcHJAKrqHmn" Name="Duration" Kind="OutputPin" />
+            <Pin Id="QzD74KhhDpCPenIvAHh1TO" Name="Ready State" Kind="OutputPin" />
+            <Pin Id="ECP34MPgeDtLvvnbIls5t9" Name="Network State" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="525,331,55,19" Id="PnH4NWdiAZBPs642ZgpTiF">
+            <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="ToString" />
+            </p:NodeReference>
+            <Pin Id="Vlp2VuygjlpM8kRIVYGzgK" Name="Input" Kind="InputPin" />
+            <Pin Id="LSzaKQO2TNoPAjwhWHQcoT" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="MsRSiFw0anvLuiAVtCtIUc" Bounds="-69,395,465,78" ShowValueBox="true" isIOBox="true" Value="1. VideoPlayer node accepts string as an url input pin because you can also use it to directly play a video from the internet.&#xD;&#xA;&#xD;&#xA;&#x9;If you use a file instead it's convenient to use a Path I/O box">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="VKjq4PUIHMkMp8LEjcTyHX" Bounds="469,337,35,19" ShowValueBox="true" isIOBox="true" Value="1.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="FWPJUvZKbMSK9w2wjjAiX7" Comment="Play" Bounds="547,372,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pad>
+        </Canvas>
+        <Patch Id="PUbtssjL2jfPDuznpHyIgY" Name="Create" />
+        <Patch Id="K08UknlW5TONH0oXbv8uvr" Name="Update" />
+        <ProcessDefinition Id="RQj9llnhn6QOAxEo1cDhhS">
+          <Fragment Id="EGel4ub9YWJMgJRWVQBNle" Patch="PUbtssjL2jfPDuznpHyIgY" Enabled="true" />
+          <Fragment Id="MLJydp4RHAWOkY79oSBQx6" Patch="K08UknlW5TONH0oXbv8uvr" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="Gje39O4G4x5PLJdrOOqy3k" Ids="HjsrwUxmCmrMyZ9QgiHacc,OCEhwLtNGflOJ0iSS7WOhA" />
+        <Link Id="LNrKZ7b4hUgNN5j6Gxt2S8" Ids="VOfjK7TrYFyQExwSUW2YsP,Vlp2VuygjlpM8kRIVYGzgK" />
+        <Link Id="NuEyhFEdWlGONlkdY5AFYM" Ids="LSzaKQO2TNoPAjwhWHQcoT,GItHBTGLhJtPVC4IqGSLAb" />
+        <Link Id="UaEsRR6MbavLjQPKITofWA" Ids="FWPJUvZKbMSK9w2wjjAiX7,QcTaWCNqoUIMGKwkjjht2z" />
+        <Link Id="TlmGgtawrhXOKXdPlQWkew" Ids="Gmkesb3fXYGN1DwzZvNDPg,AllZi1XoldhLiMcmueC673" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="G424bdpRJIJQSeklZ1EEf7" Location="VL.Stride" Version="0.8.12-g88f31c4e46" />
+  <NugetDependency Id="GQpIfNuK2kFM36VQzz4WWv" Location="VL.MediaFoundation" Version="0.2.0-stride" />
+</Document>
